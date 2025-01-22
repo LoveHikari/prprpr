@@ -18,7 +18,7 @@ function getAchives(){
     t = ``;
     $.ajax({
         type:"GET",
-        url:"https://www.moecat.tk/wp-json/wp/v2/posts?per_page=8&page=1",
+        url:"https://wp.884869.xyz//wp-json/wp/v2/posts?per_page=8&page=1",
         dataType:"json",
         success:function(json){
             for(var i = 0;i < json.length;i++){
@@ -35,7 +35,7 @@ function getAchives(){
 function gethitokoto(){
     $.ajax({
         type:"GET",
-        url:"https://api.moecat.tk/hitokoto?encode=json",
+        url:"https://api.884869.xyz/hitokoto?encode=json",
         dataType:"json",
         success:function(result){
             write(result.hitokoto);
@@ -57,7 +57,7 @@ function write(text){
 $(function(){
     $.ajax({
         type:"GET",
-        url:"https://api.moecat.tk/163?type=playlist&id=2003373695",
+        url:"https://api.884869.xyz/163?type=playlist&id=2003373695",
         success:function(e){
             var a = new APlayer({
                 element:document.getElementById("ap-f"),
